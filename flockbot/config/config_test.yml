@@ -1,0 +1,201 @@
+# SCHNELL-TEST CONFIG
+# Trag NUR die 3-4 IDs ein die du brauchst!
+
+bot:
+    options:
+        cooldown: 1440
+        queueLimit: 20
+        testerLimit: 5
+        reloadQueue: 30
+
+    messages:
+        noPermission: You do not have the permission to use this command.
+        notTicketCatagory: Command can only be ran inside of testing channels
+        resultMessageSent: Result message sent!
+        error: An error as occured
+        addToQueue: You have been added to queue!
+        testerOpenQueue: "You have opened the queue!"
+        alreadyInQueue: "You are already in the queue!"
+        queueFull: "The queue is full!"
+        notInQueue: "You are not in the queue!"
+        leaveQueue: "You have left the queue!"
+        notVerified: "You need to verify first!"
+        alreadyVerified: "You are already verified!"
+        verificationSuccess: "✅ Verified!"
+
+    channels:
+        results: 1428070859905564680        # ← OPTIONAL (kann 0 bleiben)
+        welcome: 1428070860392239384        # ← TRAG EIN: Channel wo Bot Nachricht posten soll
+        verification: 0   # ← OPTIONAL
+
+    catagories:
+        highTests: 01488381070154924102     # ← TRAG EIN: Category für Tickets (oder lass 0)
+
+    roles:
+        verified: 1493306397473902802       # ← TRAG EIN: Eine Role die du hast (kann jede sein)
+
+    tiers:                # ← KANN ALLES AUF 0 BLEIBEN
+        lt5: 0
+        ht5: 0
+        lt4: 0
+        ht4: 0
+        lt3: 0
+        ht3: 0
+        lt2: 0
+        ht2: 0
+        lt1: 0
+        ht1: 0
+
+    highTiers:
+        - ht1
+        - lt1
+        - ht2
+        - lt2
+        - ht3
+
+    gamemodes:            # NUR MACE AUSFÜLLEN ZUM TESTEN!
+        mace: 
+            queue_channel: 0  # ← TRAG EIN: Irgendein Text Channel
+            ticket_catagory: 0  # ← TRAG EIN: Irgendeine Category
+            role_ping: 0
+            queue_role: 0
+            tester_role: 0  # ← TRAG EIN: DEINE ROLE ID (damit du Commands nutzen kannst)
+            tiers:
+                lt5: 0
+                ht5: 0
+                lt4: 0
+                ht4: 0
+                lt3: 0
+                ht3: 0
+                lt2: 0
+                ht2: 0
+                lt1: 0
+                ht1: 0
+        nethpot:
+            queue_channel: 0
+            ticket_catagory: 0
+            role_ping: 0
+            queue_role: 0
+            tester_role: 0
+            tiers:
+                lt5: 0
+                ht5: 0
+                lt4: 0
+                ht4: 0
+                lt3: 0
+                ht3: 0
+                lt2: 0
+                ht2: 0
+                lt1: 0
+                ht1: 0
+        smp:
+            queue_channel: 0
+            ticket_catagory: 0
+            role_ping: 0
+            queue_role: 0
+            tester_role: 0
+            tiers:
+                lt5: 0
+                ht5: 0
+                lt4: 0
+                ht4: 0
+                lt3: 0
+                ht3: 0
+                lt2: 0
+                ht2: 0
+                lt1: 0
+                ht1: 0
+        sword:
+            queue_channel: 0
+            ticket_catagory: 0
+            role_ping: 0
+            queue_role: 0
+            tester_role: 0
+            tiers:
+                lt5: 0
+                ht5: 0
+                lt4: 0
+                ht4: 0
+                lt3: 0
+                ht3: 0
+                lt2: 0
+                ht2: 0
+                lt1: 0
+                ht1: 0
+        uhc:
+            queue_channel: 0
+            ticket_catagory: 0
+            role_ping: 0
+            queue_role: 0
+            tester_role: 0
+            tiers:
+                lt5: 0
+                ht5: 0
+                lt4: 0
+                ht4: 0
+                lt3: 0
+                ht3: 0
+                lt2: 0
+                ht2: 0
+                lt1: 0
+                ht1: 0
+        axe:
+            queue_channel: 0
+            ticket_catagory: 0
+            role_ping: 0
+            queue_role: 0
+            tester_role: 0
+            tiers:
+                lt5: 0
+                ht5: 0
+                lt4: 0
+                ht4: 0
+                lt3: 0
+                ht3: 0
+                lt2: 0
+                ht2: 0
+                lt1: 0
+                ht1: 0
+        diamondpot:
+            queue_channel: 0
+            ticket_catagory: 0
+            role_ping: 0
+            queue_role: 0
+            tester_role: 0
+            tiers:
+                lt5: 0
+                ht5: 0
+                lt4: 0
+                ht4: 0
+                lt3: 0
+                ht3: 0
+                lt2: 0
+                ht2: 0
+                lt1: 0
+                ht1: 0
+        vanilla:
+            queue_channel: 0
+            ticket_catagory: 0
+            role_ping: 0
+            queue_role: 0
+            tester_role: 0
+            tiers:
+                lt5: 0
+                ht5: 0
+                lt4: 0
+                ht4: 0
+                lt3: 0
+                ht3: 0
+                lt2: 0
+                ht2: 0
+                lt1: 0
+                ht1: 0
+
+database:
+    type: sqlite
+    mysql:
+        host: localhost
+        port: 3306
+        user: root
+        password: root
+        database: tiers
